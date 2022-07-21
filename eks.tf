@@ -133,6 +133,7 @@ module "eks" {
         "k8s.io/cluster-autoscaler/${local.cluster_name}" = "owned"
         "k8s.io/cluster-autoscaler/enabled"               = "TRUE"
       }
+      iam_role_additional_policies = ["arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy"]
     }
     zone_b = {
       min_size     = 0
@@ -159,6 +160,7 @@ module "eks" {
         "k8s.io/cluster-autoscaler/${local.cluster_name}" = "owned"
         "k8s.io/cluster-autoscaler/enabled"               = "TRUE"
       }
+      iam_role_additional_policies = ["arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy"]
     }
     zone_c = {
       min_size     = 0
@@ -185,6 +187,7 @@ module "eks" {
         "k8s.io/cluster-autoscaler/${local.cluster_name}" = "owned"
         "k8s.io/cluster-autoscaler/enabled"               = "TRUE"
       }
+      iam_role_additional_policies = ["arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy"]
     }
   }
 
