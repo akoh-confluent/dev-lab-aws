@@ -1,3 +1,11 @@
+# create amazon-cloudwatch namespace
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: amazon-cloudwatch
+  labels:
+    name: amazon-cloudwatch
+---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -343,9 +351,9 @@ spec:
               mountPath: /var/log/dmesg
               readOnly: true
       terminationGracePeriodSeconds: 10
-      hostNetwork: true
+      #hostNetwork: true
       dnsPolicy: ClusterFirstWithHostNet
-      volumes:
+      volumes:£
         - name: fluentbitstate
           hostPath:
             path: /var/fluent-bit/state
