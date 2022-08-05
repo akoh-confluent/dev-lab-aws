@@ -1,0 +1,14 @@
+    #############################################################################
+    #############################################################################
+    ######### Managed by Terraform, not safe to change ##########################
+    #############################################################################
+    #############################################################################
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: vault-issuer
+  namespace: confluent
+spec:
+  vault:
+    server: https://vault.akoh.local
+    caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURKekNDQWcrZ0F3SUJBZ0lSQU9sbGRXRkpSTUdiekVzc09CbGRGTEV3RFFZSktvWklodmNOQVFFTEJRQXcKTFRFV01CUUdBMVVFQ2hNTlRYa2dURzlqWVd3c0lFbHVZekVUTUJFR0ExVUVBeE1LWVd0dmFDNXNiMk5oYkRBZQpGdzB5TWpBM01qQXdPVFUyTVRkYUZ3MHlNekEzTWpBd09UVTJNVGRhTUMweEZqQVVCZ05WQkFvVERVMTVJRXh2ClkyRnNMQ0JKYm1NeEV6QVJCZ05WQkFNVENtRnJiMmd1Ykc5allXd3dnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUEKQTRJQkR3QXdnZ0VLQW9JQkFRQzFrcDlzOE5NZG11U0FlcWg2dXppL1RwdlAwNndRcEo4NVR1L01SV000TWMxOAowOUVudjhFYkNtTmJMR0l1SU1JMTc4TGlHUXkyNDFQYzBXWTVRRlZUblJtQkNiQzBWdkxGbjdkVk1LcER2VDB2CnJoTjc4dythQUYzb0l2c2ozZVNvSkdMcHYzUFNLRE4rSFhxZmV0dDlHMEdyVkkyeEpTRmtPd25zTUpXb0ZvbWIKeE1tc0h3Q21wWjlrZ0F6UnkxMU9IeGs5a2IraVhEZTQ2d1Z4eUZIZUF0aS9JNlNKeExpRGFoR0w2ckxlRy8zcAo0SU1STkwxUTF2YU9ESXRaZHZsaUx5SUJtNFZZVTc3aTNjUHJ6QmVhb0xjZWRVdHBEUjVid1FreEN1TlZqa2c4ClgySzU3V0VXeVVpTDZYeUZ3TEFlQmRPNDBISFkzQUpQL29PT2dsS3BBZ01CQUFHalFqQkFNQTRHQTFVZER3RUIKL3dRRUF3SUNwREFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQjBHQTFVZERnUVdCQlNzOXZQYms1bDRzd0VPeGFXOQoyQUYxU2lSVkxUQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FRRUFZYkdhQi9Sdm4yMU1nbWQybzNWcEY2SU5Bbkk2CnRqYWJvQjNocngxUDNVdDJyUytmWVVIQzZ1NDQ2d0liYVljUnN3cjMraXU0S29xNTdtZ2dzNWkyaUpZYlU4bzcKSnRyS0lodkNxMjlYVTVqbi8rcFQyUXgvcDFoWFJjU0lDNkttNmFna0JWZmpqOUFaaUw2Vmp0clYxOGV4YU1lNwpXWmFrN0t5TU8xUGYxNmpMU1ZtQkVuZFlLUmJReDNJazhFWkU1dGozL0p1cVd0MVQrNHpiYW16bHdhNWdzdHpwClRrV0t0M3Bwdms3dm5JK2xTQWxxU0EvczcxUTJlY0ZLRkhhN0g4ak9ydXRaMXFYQWhaY21XNWlwV2xNNllGQjcKbzdBS0lJREVuMituZUp6WnI3NTdaZDZNNUpKYXcyaWtBL2E0dDhoaklyZDMzT2EzeGdaVWh0RFBwQT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
