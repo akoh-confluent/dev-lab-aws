@@ -16,7 +16,7 @@ roleRef:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: confluent-operator
+  name: demo-confluent-operator
   namespace: confluent
 subjects:
   - kind: User
